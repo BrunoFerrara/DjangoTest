@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from DjangoTest.view import saludar
+from DjangoTest.view import saludar, saludar_con_fecha
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("saludo/", saludar),
+    path("saludo-hoy/", saludar_con_fecha)
 ]
 
